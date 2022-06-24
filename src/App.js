@@ -4,12 +4,14 @@ import React from 'react';
 // import Hello from "./component/hello"
 // import Props from "./component/Props"
 // import Message  from './component/message';
-import Counter from "./component/counter"
+// import Counter from "./component/counter"
+import FunctionClick from "./component/functionClick";
+import classClick from './component/classClick';
 
 const App = () => {
   return <>
-  <Counter/>
-  {/* <Greet/>
+    {/* // <Counter/>
+  <Greet/>
   <Welcome/>
   <Hello/>
   <Props name="Rohit">
@@ -21,6 +23,9 @@ const App = () => {
   <Props name="Dipesh" />
 
   <Message/> */}
+
+    <FunctionClick />
+    <classClick />
   </>
 };
 
