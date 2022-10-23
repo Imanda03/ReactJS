@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: rgba(20, 19, 19, 0.885);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: rgba(27, 26, 26, 0.914);
+  height: 90px;
+  padding: 30px 25px;
+
+}
+
+.nav-logo{
+  width: 60px;
+  margin-right: 7px;
+}
+
+.nav-h2{
+  margin-right: auto;
+  font-size: 26px;
+  color:aqua;
+  font-weight: 700;
+}
+
+.nav-h3{
+  margin: 0;
+  color: rgb(240, 248, 255);
+  font-weight: 600;
+}
+
+main{
+  padding: 57px 27px;
+  color: white;
+  background-image: url(./Components/image/download.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  
+}
+
+#main > .main-h1{
+  margin: 0;
+  font-size: 39px;
+
+}
+
+#main > .main-ul{
+  margin-top: 46px;
+}
+
+main  .li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+/* To color the bullet */
+main  .li::marker{
+  font-size: 1.5rem;
+  color: aqua;
+}
