@@ -5,12 +5,14 @@ import MemeData from './MemeData'
 
 const Meme = () => {
 
+    const [memeImage, setMemeImage] = React.useState("")
+
     function getMemeImg(e){
         e.preventDefault()
         const memeData = MemeData.data.memes
         const randomNUmber = Math.floor(Math.random() * memeData.length)
         console.log(randomNUmber)
-        const url = memeData[randomNUmber].url
+        setMemeImage(memeData[randomNUmber].url)
     }
 
   return (
@@ -25,6 +27,8 @@ const Meme = () => {
             >
                 Get a meme image <FaImage /></button>
         </form>
+
+        <img src={memeImage} className="form-img"/>
     </div>
   )
 }
