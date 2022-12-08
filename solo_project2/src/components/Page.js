@@ -11,6 +11,7 @@ const page = (props) => {
                 <span className='grey'>End date: {props.item.endDate}</span>
                 <p><span className='desc'>Location:</span> {props.item.location}</p>
                 <span className='desc'>Description:</span><p className='para'>{props.item.description}</p>
+                <hr/>
             </div>
             
             </div>

@@ -4,7 +4,7 @@ import img from "../image/airbnb.png"
 const NavBar = () => {
   return (
     
-        <nav>
+        <nav className='navBar'>
             <img src={img} alt="airbnb_logo" className='nav-logo'/>
         </nav>
     
