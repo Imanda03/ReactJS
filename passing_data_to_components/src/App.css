@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.header{
+  background-color: #33c3c3d7;
+  height: 15vh;
+  /* border: 1px solid rgb(78, 78, 237); */
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.4)
+   
+}
+
+#headerId{
+padding: 20px;
+font-size: 16px;
+font-style: italic;
+color: rgb(0, 0, 0);
+}
+
+.mainBody{
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.mainBody > h1{
+  font-size: 20px;
+  color: rgb(63, 15, 7);
+}
