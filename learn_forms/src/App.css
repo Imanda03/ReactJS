@@ -1,0 +1,4 @@
+input[type="text"], input[type="email"]{
+  display: flex;
+  margin: 20px;
+}

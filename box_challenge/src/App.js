@@ -8,21 +8,27 @@ function App(props) {
     
     function toggle(id) {
       setSqaures(prevSqaure=>{
-        const newSquares = [];
-        for(let i = 0; i < prevSqaure.length; i++){
-          const currentSquare = prevSqaure[i]
-            if(currentSquare.id ===id){
-              const updatedSquare ={
-                ...currentSquare,
-                on: !currentSquare.on
-              }
-              newSquares.push(updatedSquare)
-            } 
-              else{
-                newSquares.push(currentSquare)
-              }
-            }
-            return newSquares
+
+        return prevSqaure.map((square)=>{
+          return square.id === id ? {...square, on: !square.on} : square  
+        })
+
+
+        // const newSquares = [];
+        // for(let i = 0; i < prevSqaure.length; i++){
+        //   const currentSquare = prevSqaure[i]
+        //     if(currentSquare.id ===id){
+        //       const updatedSquare ={
+        //         ...currentSquare,
+        //         on: !currentSquare.on
+        //       }
+        //       newSquares.push(updatedSquare)
+        //     } 
+        //       else{
+        //         newSquares.push(currentSquare)
+        //       }
+        //     }
+        //     return newSquares
         }
       )
     }
